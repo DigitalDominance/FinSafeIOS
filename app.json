@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "FinSafe",
+    "slug": "finsafe",
+    "scheme": "finsafe",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.finsafe.app"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
