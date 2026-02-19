@@ -7,7 +7,9 @@
     "start": "expo start",
     "ios": "expo run:ios",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build:ios": "eas build --platform ios --profile preview",
+    "build:ios:prod": "eas build --platform ios --profile production"
   },
   "dependencies": {
     "expo": "~52.0.0",

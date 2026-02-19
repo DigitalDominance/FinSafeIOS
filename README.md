@@ -25,6 +25,24 @@ npm run start
 npm run ios
 ```
 
+## Build IPA for testing
+
+Use EAS Build with the internal distribution profile. This produces an `.ipa` that can be installed on test devices.
+
+```bash
+npm install
+npm run build:ios
+```
+
+Useful notes:
+- First-time setup: run `npx eas login` and `npx eas build:configure`.
+- `build:ios` uses the `preview` profile in `eas.json` (`distribution: internal`) so the output is an installable IPA for testing.
+- For App Store builds, use:
+
+```bash
+npm run build:ios:prod
+```
+
 ## Test
 
 ```bash
